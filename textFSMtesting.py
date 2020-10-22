@@ -13,7 +13,7 @@ device1 = {
         'device_type': 'cisco_ios'
 }
 
-net_connect = ConnectHandler(**device)
+net_connect = ConnectHandler(**device1)
 
 print()
 
@@ -24,7 +24,7 @@ for cmd in cmds:
 	print('#'*20)
 	print(cmd)
 	print('#'*20)
-	pprint(outut)
+	pprint(output)
 	print('#'*20)
 	print()
 

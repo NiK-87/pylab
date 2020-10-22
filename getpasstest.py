@@ -20,7 +20,7 @@ device2 = {
 
 for x in (device1,device2):
 	net_connect = ConnectHandler(**x)
-	print(net_connect.send_command("show ip arp"))
-	print(net_connect.send_command("show ver"))
+	print(net_connect.send_command("show ip arp", use_textfsm=True))
+	print(net_connect.send_command("show ver", use_textfsm=True))
 
-
+net_connect.disconnect()
